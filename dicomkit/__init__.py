@@ -19,3 +19,12 @@ def mri_to_png(mri_file, png_file, do_auto_contrast=False):
 
 def extract_grayscale_image(mri_file):
     plan = pydicom.read_file(mri_file)
+    shape = plan.pixel_array.shape
+
+    image_2d = plan.pixel_array.astype(float)
+
+    image_2d_scaled = (np.maximum(image_2d,0) / image_2d.max()) * 255.0
+    
+    image_2d_scaled = np.uint8(image_2d_scaled)
+
+    return ScaleImage(image_2d_scaled, shape[1], shape[0])
