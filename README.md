@@ -3,17 +3,48 @@ A Python Tool/Library To Convert Dicom File To Image
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-## Usage:
-```
-```
+## Tested on:
+- Linux
+- macOS
+- Windows
+
+## Requirements:
+- Latest version of python3
+- found any issues in running dicom kit feel free to open an (issue)[https://github.com/krishpranav/dicomkit/issues/new]
 
 # Using dicomkit as a library:
-## Convert A Single File
+## Convert a single file
 ```python3
 import dicomkit
 
 dicomkit.convert_file('/home/user/file.dcm', '/home/user/output.png', auto_contrast=True)
 ```
+
+## Convert a folder containing dicom files
+```python3
+import dicomkit
+
+dicomkit.conver_folder('/home/user/dicomdir/', '/home/user/outputdir/')
+```
+
+## Cli of dicomkit:
+## usage
+
+- Installation:
+```
+python3 -m pip install -r requirements.txt
+```
+
+- convert a single file
+```
+python3 dicomkit --auto-contrast /folder/dicomfile.dcm outputdicomfile.png
+```
+
+- convert a directory containing dicom files:
+```
+python3 dicomkit.py /folder/ /output
+```
+
 
 ## License:
 ```
