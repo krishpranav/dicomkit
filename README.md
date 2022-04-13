@@ -7,6 +7,14 @@ A Python Tool/Library To Convert Dicom File To Image
 ```
 ```
 
+# Using dicomkit as a library:
+## Convert A Single File
+```python3
+import dicomkit
+
+dicomkit.convert_file('/home/user/file.dcm', '/home/user/output.png', auto_contrast=True)
+```
+
 ## License:
 ```
 MIT License
