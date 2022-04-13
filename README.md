@@ -10,7 +10,7 @@ A Python Tool/Library To Convert Dicom File To Image
 
 ## Requirements:
 - Latest version of python3
-- found any issues in running dicom kit feel free to open an (issue)[https://github.com/krishpranav/dicomkit/issues/new]
+- found any issues in running dicom kit feel free to open an [issue](https://github.com/krishpranav/dicomkit/issues/new)
 
 # Using dicomkit as a library:
 ## Convert a single file
