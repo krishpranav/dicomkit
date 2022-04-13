@@ -7,7 +7,7 @@ from classes import convert_folder, convert_file
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Convert a dicom MRI file to png. To conver a whole folder recursivly, use the -f option")
+    parser = argparse.ArgumentParser(description="Convert a dicom file to png. To convert a whole folder use the -f option")
     parser.add_argument('-f', '--folder', action='store_true', help='Convert a whole folder instead of a single file')
     parser.add_argument('-c', '--auto-contrast', help='Apply contrast after converting default image', action="store_true")
     parser.add_argument('dicom_path', help='Full path to the mri file')
