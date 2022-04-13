@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from .model import ScaleImage
+from model import ScaleImage
 
 def shade_at_precentile(hist, precentile):
     n = np.sum(hist)

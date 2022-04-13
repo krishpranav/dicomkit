@@ -2,8 +2,8 @@ import os
 import png
 import pydicom
 import numpy as np
-from .model import ScaleImage
-from .contrast import contrast_auto
+from model import ScaleImage
+from contrast import contrast_auto
 
 def mri_to_png(mri_file, png_file, do_contrast_auto=False):
 
